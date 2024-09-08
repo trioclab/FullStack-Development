@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Clone</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+        <!-- Header Section -->
+        <header>
+            <div id="top-header">
+                <i class="ri-message-2-fill"></i>
+                <i class="ri-donut-chart-fill"></i>
+                <i class="ri-chat-private-fill"></i>
+                <i class="ri-group-line"></i>
+            </div>
+            <div id="bottom-header">
+                <i class="ri-settings-3-line"></i>
+            </div>
+        </header>
+        
+        <!-- Main Content -->
+        <main>
+            <section id="top-main-section">
+                <h2>Chats</h2>
+                <i onclick="show_menu()" id="kebab-menu" class="ri-more-2-fill"></i>
+            </section>
+            <section>
+                <input id="search-bar" type="text" placeholder="Search">
+            </section>
+            
+            <!-- Chat List Section -->
+            <section id="archieve" class="chats">
+                <i id="archieve-logo" class="ri-archive-2-fill"></i>
+                <p class="contact-name" id="archi">Archive</p>
+            </section>
+            <hr>
+            
+            <!-- Chat Area -->
+            <div id="all-chats">
+                <!-- Add chat items dynamically here -->
+                <div class="chats">
+                    <div class="image-div">
+                        <img class="dp" src="bla bla.jpg" alt="">
+                    </div>
+                    <div class="contact">
+                        <p class="contact-name">Mahnoor</p>
+                        <p>When are we going to meet?</p>
+                    </div>
+                </div>
+                <!-- Add more chats similarly -->
+            </div>
+            
+            <!-- Menu and File Upload Section -->
+            <section id="menu">
+                <input type="file" name="dp-picture" id="dp-pic" />
+                <button id="profile-btn">Profile</button>
+            </section>
+            <video id="camera-stream" autoplay></video>
+        </main>
+        
+        <!-- Chat Interaction Section -->
+        <section id="chats-section">
+            <div id="chats-section-top">
+                <div id="top-section-left">
+                    <i class="ri-user-line"></i>
+                    <div id="number">+92 33333333</div>
+                </div>
+                <div id="top-section-right">
+                    <i class="ri-phone-fill"></i>
+                    <i class="ri-video-fill"></i>
+                    <i class="ri-search-line"></i>
+                    <a href="profile.html"><i class="ri-more-2-fill"></i></a>
+                </div>
+            </div>
+            <div id="chats-section-center">
+                <!-- Chat messages can be dynamically added here -->
+            </div>
+            <div id="chats-section-bottom">
+                <i class="ri-emoji-sticker-line"></i>
+                <i class="ri-add-fill"></i>
+                <input type="text" id="text-type" placeholder="Type a message" onchange="myFunction(this.value)">
+                <i class="ri-mic-fill"></i>
+            </div>
+        </section>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #9eb8e0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#todo-app {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 40vmax;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin: 20px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #4a54f1;
+    margin-bottom: 20px;
+}
+
+.sticker {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100px;
+    transition: all 1.3s infinite;
+    transform: translateX(10px);
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #4a54f1;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 1.2rem;
+    color:#4a54f1 ;
+}
+
+button {
+    background-color: #ffabff;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #e090e0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li {
+    background: #e3e6f5;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+ul li:hover {
+    transform: scale(1.02);
+}
+
+ul li button {
+    background: #ff5f5f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+ul li button:hover {
+    background: #e04848;
+}
+img{
+    width: 150px;
+}
+#sticker1{
+    position: absolute;
+    top: 0%;
+}
+#sticker2{
+    position: absolute;
+    top: 20%;
+    right: 0%;
+}
+#sticker3{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+#sticker4{
+    position: absolute;
+    top: 0%;
+
+}
+#sticker5{
+    position: absolute;
+    top: 60%;
+    right: 2%;
+}
+#sticker6{
+    position: absolute;
+    left: 10%;
+}
